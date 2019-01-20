@@ -1,11 +1,8 @@
-Title: About This Website
+Title: About Me
 Date: 2019-01-20T21:55+00:00
-Category: About
 Tags: Meta
 
-My name is Ashish Banerjee, and this the first article that I'm posting on this
-website. I have recently updated from my old server to this one. I might
-sporadically post articles and other content here.
+My name is Ashish Banerjee, and this is my personal website.
 
 I am a software engineer. I can write code in most major languages, but prefer
 Python most of all. Most of the code I write is for web development or research
