@@ -20,8 +20,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),)
+LINKS = (('C.W. Taekwondo (requires Javascript to view)', 'https://www.cwtkd.com/'),
+         ('/r/dota2', 'https://old.reddit.com/r/DotA2/'),
+         ('Dota VODs', 'https://old.reddit.com/r/DotaVods/'),)
 
 # Social widget
 # SOCIAL = (('You can add links in your config file', '#'),
