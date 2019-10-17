@@ -4,9 +4,9 @@ Category: Computers
 Tags: Software, Internet
 Slug: email-with-gandi
 
-I decided this past weekend to set up my on own domain. My [previous post][1]
-detailed why I decided to do this. Now I'll explain how I implented it and why
-I made some of the choices that I did.
+I decided this past weekend to set up email my on own domain. My [previous
+post][1] detailed why I decided to do this. Now I'll explain how I implented it
+and why I made some of the choices that I did.
 
 My DNS is registered using [Gandi][2], and they provide quite an excellent
 email hosting solution for their DNS customers. It was extremely easy to set
@@ -14,14 +14,14 @@ up, and the details of how can be found [here][3]. A brief summary of how it
 works:
 
 1.  You ensure that your [MX records][4] direct mail to Gandi's managed mail
-    servers. My domain has the MX records set automatically, but I had to
+    servers. My domain had the MX records set automatically, but I had to
     manually implement the SPF record.
 
 2.  You purchase some email addresses under your DNS address. Gandi provides
     two offerings - 3GB of storage, or 50GB of storage.
 
-3.  You activate the mailboxes (ie. set the username and password for the
-    purchased account(s)).
+3.  You activate the mailboxes, ie. set the username and password for the
+    purchased account(s).
 
 Here are some of the reasons I like this approach and some of the features I
 like about this setup:

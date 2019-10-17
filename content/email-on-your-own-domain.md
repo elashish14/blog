@@ -4,8 +4,8 @@ Category: Computers
 Tags: Software, Internet
 Slug: email-on-your-own-domain
 
-It has long been a priority of mine to migrate my email addresses to my on
-domain name. My reasons for doing this are quite numerous.
+It has long been a priority of mine to migrate my email addresses to my own
+domain name. My reasons for doing this are quite numerous:
 
 1.  Email is probably our most intimate form of communication, and I am
     growing increasingly uncomfortable about using external services like
