@@ -55,7 +55,7 @@ Here are a few reasons why this is important:
 ## Complexity of Document Formats
 
 The [ODF][5] standard was spearheaded by the developers of the LibreOffice
-suite (at the time when the project was known as OpenOffice.org), while
+suite (during the period when the project was known as OpenOffice.org), while
 Microsoft led the standardization of the [OOXML][6] format (in a very
 controversial manner one might recall). ODF is a somewhat complex (but still
 well-designed) standard, and OOXML is an incredibly complex one - the standard
@@ -80,9 +80,11 @@ complex formats such as ODF and OOXML because users never look at the actual
 data that they're creating - they're just looking at a very high level
 abstraction of it when they are using their document processing software.
 Markup languages, on the other hand, usually allow users to write their content
-in simply structured Unicode files; and since users can see *exactly* what is
+in simply structured text files; and since users can see *exactly* what is
 being passed to the document generator, they can rest assured that these types
-of transparent errors do not occur.
+of transparent errors do not occur. The text-based input provided to the
+document generation program is far less ambiguous than the graphical view of
+the complicated GUIs of document processing software.
 
 ## Flexibility of Conversion Tools
 
@@ -101,25 +103,23 @@ ultimately, a document is a fairly simple tree-like structure of document
 elements. The vast majority of documents all consist of the same basic
 structures: sections, subsections, text, tables, figures, numbered and
 unnumbered lists, references, a couple other types of elements, and some
-metadata such as the author, date, etc. As soon as a program can read this
-information into its own syntax tree, it can be manipulated at will, converting
-the content to and from different formats, each of which is appropriate for a
-particular for whatever purpose is needed. The next section talks about how this flexibility in the use of the content can be useful in document preparation.
+metadata such as the author, date, etc. If a program can read this content into
+its own syntax tree, it can manipulate the presentation at will, converting it
+into whichever document format is appropriate.
 
-As an example of how this can enhance user productivity, a typesetter could be configured to generate different styling
-One direct benefit of this is that
-the typesetter can automatically generate separate documents for drafting,
-review, and final publication.
+The next section goes into more detail about how this flexibility in the use of
+the content can be useful in document preparation.
 
 ## Separation of Software Responsibilities
 
 A standard document processor must provide authors the means to perform all
-tasks of the document generation process: writing, viewing, collaboration,
-updating, archiving, and error checking. As a result, document
-processors become a tool that is forced to do everything, and as a result, they
-cannot do any of those tasks particularly well. By contrast, typesetters enable
-a more distributed workflow, delegating each task of the process to a separate,
-specialized tool.
+tasks of the document generation process (writing, viewing, collaboration,
+updating, archiving, error checking) because, once again, users can
+only interact with their document through such complex programs designed
+specially for these formats. As a result, document processors become a tool
+that is forced to do everything, but cannot honestly do any of these tasks
+particularly well. By contrast, typesetters enable a more distributed workflow,
+delegating each task of the process to a separate, specialized tool.
 
 ### Writing
 
@@ -136,15 +136,20 @@ amounts of work.
 ### Viewing
 
 Collaborators who need to preview text in its distribution format can do so in
-whichever medium they wish. The flexibility to view in a web browser or PDF
-viewer is possible. It is also possible to output to multiple kinds of paper
-formats if a hard copy is desired. Additionally, multiple styles can be created
-and chosen dynamically. For example, separate styles could be created for
-drafting, review, and final publication.
+whichever medium they wish. There is flexibility to use a web browser, a PDF
+viewer, or some other tool. It is also possible to output to multiple kinds of
+paper formats if a hard copy is desired. Additionally, multiple styles can be
+created and chosen dynamically. For example, separate styles could be created
+for drafting, review, and final publication.
 
 ### Collaboration
 
-To begin with, input documents can be split into multiple files, so multiple authors can work independently on their own sections without having to perform difficult manual merges at the end of the process or using manual labour to ensure that styling is consistent. If users wish to use an external tool to sync their changes (such as git, for example), they can easily share changes in isolated patches and rebase on the most recent working copy.
+When documents can be split into multiple files, it is much easier for authors
+to work independently on their own sections without conflict. On the other
+hand, it is very difficult and requires much more manual labour to merge
+separate ODF/OOXML documents. And should users choose to use an external tool
+to sync their changes (for example, git), they can easily share changes in
+isolated patches and rebase on the most recent working copy.
 
 ### Updating
 
@@ -154,15 +159,27 @@ format, the user must open each file, update it manually, and save it. Even
 worse, suppose there are hundreds of files and it is not even known which ones
 use said figure! The task quickly becomes impossible!
 
-If the files were stored in a text-based format, it is easy to search which ones contain the figure by its filename. Then the user simply has to update the file in place and regenerate the documents that refer to it. It can be done very quickly and easily.
+If the files were stored in a text-based format, it is easy to search which
+ones contain the figure by its filename. Then the user simply has to update the
+file in place and regenerate the documents that refer to it. It can be done
+very quickly and easily.
 
 ### Archiving
 
 As insinuated in the previous section, it can become necessary to search
 through several old documents for a particular string of text, or a reference
-to a particular image. If the files are in a text-based format, searching becomes very simple. If they are stored in a large XML format such as an ODF, searching becomes much more difficult.
+to a particular image. If the files are in a text-based format, searching
+becomes very simple. If they are stored in a large XML format such as an ODF,
+searching becomes much more difficult.
 
-Another issue to consider is what might happen if there are multiple versions of a file on disk. A tool like diff (or vimdiff) can quickly tell the differences between the files, or a checksum can tell whether they are the same. However, if the document format is too complicated, it becomes much harder to tell how they are different, or if they are different at all! And once again, scalability becomes an issue; it becomes an arduous task if there are only a few versions, but if there are dozens, it becomes impossible to track.
+Another issue to consider is what might happen if there are multiple versions
+of a file on disk. A tool like diff (or vimdiff) can quickly tell the
+differences between the files, or a checksum can tell whether they are the
+same. However, if the document format is too complicated, it becomes much
+harder to tell how they are different, or if they are different at all! And
+once again, scalability becomes an issue; it becomes an arduous task if there
+are only a few versions, but if there are dozens, it becomes impossible to
+track.
 
 ### Error Checking
 
