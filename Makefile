@@ -7,7 +7,7 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
-THEMEDIR=$(BASEDIR)/theme/simple
+THEMEDIR=$(BASEDIR)/theme/notmyidea-blue
 
 
 DEBUG ?= 0
