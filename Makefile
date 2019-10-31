@@ -7,7 +7,6 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
-THEMEDIR=$(BASEDIR)/theme/notmyidea-blue
 
 
 DEBUG ?= 0
@@ -19,8 +18,6 @@ RELATIVE ?= 0
 ifeq ($(RELATIVE), 1)
 	PELICANOPTS += --relative-urls
 endif
-
-PELICANOPTS += -t $(THEMEDIR)
 
 help:
 	@echo 'Makefile for a pelican Web site                                           '
