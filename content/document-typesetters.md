@@ -2,7 +2,7 @@ Title: Why I Prefer Document Typesetters
 Date: 2019-10-17T01:40+00:00
 Category: Computers
 Tags: Software, Productivity
-Slug: why-i-prefer-document-typesetters
+Slug: document-typesetters
 
 I want to write a short post on why I feel that document typesetters are
 advantageous to using document processors for generating publications. This is
@@ -20,7 +20,7 @@ examples of markup systems include [Markdown][3] and [reStructuredText][4].
 
 What follow are some of the reasons I prefer document typesetters.
 
-## Declarative Structure
+# Declarative Structure
 
 Document processors make direct formatting easy. This frequently encourages bad
 behaviours, such as using direct formatting to structure section headers and
@@ -52,7 +52,7 @@ Here are a few reasons why this is important:
     processors rely on extremely complicated document formats. The next section
     will go into this point in more detail.
 
-## Complexity of Document Formats
+# Complexity of Document Formats
 
 The [ODF][5] standard was spearheaded by the developers of the LibreOffice
 suite (during the period when the project was known as OpenOffice.org), while
@@ -86,7 +86,7 @@ of transparent errors do not occur. The text-based input provided to the
 document generation program is far less ambiguous than the graphical view of
 the complicated GUIs of document processing software.
 
-## Flexibility of Conversion Tools
+# Flexibility of Conversion Tools
 
 Another advantage of writing content in a markup language is that the document
 can be viewed in multiple formats. This post, for example, is being  written in
@@ -110,7 +110,7 @@ into whichever document format is appropriate.
 The next section goes into more detail about how this flexibility in the use of
 the content can be useful in document preparation.
 
-## Separation of Software Responsibilities
+# Separation of Software Responsibilities
 
 A standard document processor must provide authors the means to perform all
 tasks of the document generation process (writing, viewing, collaboration,
@@ -121,7 +121,7 @@ that is forced to do everything, but cannot honestly do any of these tasks
 particularly well. By contrast, typesetters enable a more distributed workflow,
 delegating each task of the process to a separate, specialized tool.
 
-### Writing
+## Writing
 
 The markup languages which are usually read in by typesetting tools are usually
 written in simple ASCII or Unicode text files. Thus, authors can use even the
@@ -133,7 +133,7 @@ OOXML files. All of them are considerably more complex and resource intensive
 than a text editor. And when they crash, users often end up losing significant
 amounts of work.
 
-### Viewing
+## Viewing
 
 Collaborators who need to preview text in its distribution format can do so in
 whichever medium they wish. There is flexibility to use a web browser, a PDF
@@ -142,7 +142,7 @@ paper formats if a hard copy is desired. Additionally, multiple styles can be
 created and chosen dynamically. For example, separate styles could be created
 for drafting, review, and final publication.
 
-### Collaboration
+## Collaboration
 
 When documents can be split into multiple files, it is much easier for authors
 to work independently on their own sections without conflict. On the other
@@ -151,7 +151,7 @@ separate ODF/OOXML documents. And should users choose to use an external tool
 to sync their changes (for example, git), they can easily share changes in
 isolated patches and rebase on the most recent working copy.
 
-### Updating
+## Updating
 
 Consider what might happen if someone realizes they made an error in a plot
 that they generated for several documents. If they are all stored in ODF
@@ -164,7 +164,7 @@ ones contain the figure by its filename. Then the user simply has to update the
 file in place and regenerate the documents that refer to it. It can be done
 very quickly and easily.
 
-### Archiving
+## Archiving
 
 As insinuated in the previous section, it can become necessary to search
 through several old documents for a particular string of text, or a reference
@@ -181,7 +181,7 @@ once again, scalability becomes an issue; it becomes an arduous task if there
 are only a few versions, but if there are dozens, it becomes impossible to
 track.
 
-### Error Checking
+## Error Checking
 
 Tasks like spell checking are built into most document processors, but can also
 be run externally. Extracting statistics like the number of spelling errors or
@@ -189,7 +189,7 @@ the level of vocabulary or the number of times a reference is used are easier
 to implement and use when they can be as standalone programs outside of a
 document processor.
 
-## Conclusion
+# Conclusion
 
 This is a mostly exhaustive list of my opinions about why I like document typesetters. Ultimately, there are trade-offs with every tool for a particular task, and I am of course not suggesting that documents should always be prepared in a particular way. But hopefully this post will stimulate thought on when, how and why it might be appropriate to do things somewhat differently.
 
