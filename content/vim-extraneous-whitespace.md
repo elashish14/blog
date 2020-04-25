@@ -1,7 +1,7 @@
 Title: Highlighting and Deleting Extra Whitespace in Vim
 Date: 2020-02-28T22:41:44+00:00
 Category: Computers
-Tags: Software, Vim
+Tags: Software, vim
 Slug: vim-extra-whitespace
 
 Here is a very helpful but difficult-to-remember portion of configuration

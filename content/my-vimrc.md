@@ -1,7 +1,7 @@
 Title: My .vimrc File
 Date: 2020-01-18T22:20:20+00:00
 Category: Computers
-Tags: Software, Vim
+Tags: Software, vim
 Slug: my-vimrc
 
 Behold, my .vimrc file!
