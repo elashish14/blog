@@ -1,7 +1,7 @@
 Title: Static Website Generation
 Date: 2019-01-20T22:24+00:00
 Category: Computers
-Tags: Software, Meta
+Tags: Software, Meta, WWW
 Slug: static-website-generation
 
 I created this website using [Pelican][1]. I think it's absolutely fantastic.
