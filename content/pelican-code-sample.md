@@ -11,13 +11,13 @@ Here is an example of code samples in a Pelican post:
 
 And here is how one writes it in a post:
 
-    :::markdown
+    :::text
     :::python
     print("Hello world!")
 
 And I created the last block like so:
 
-    :::markdown
+    :::text
     :::markdown
     :::python
     print("Hello world!")
