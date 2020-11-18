@@ -12,9 +12,7 @@ The reason why I like these two features is because they significantly improve t
 
 Suppose we wish to store a `Person` object in memory. We'll define the fields that we wish to store as `name`, `birthdate`, `occupation`, and a unique identifier `id`.
 
-## Structured Approaches
-
-### NamedTuple
+## NamedTuple
 
 Here is how we can define our `Person` object using a named tuple:
 
