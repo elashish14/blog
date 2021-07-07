@@ -54,10 +54,6 @@ obstacle.
 
 ## Making it Worthwhile
 
-Here is a sobering and oft-overlooked fact: in any single elimination
-tournament setting, 50% of all competitors will only play one match. And it
-will be a loss.
-
 I have never seen a taekwondo tournament with group stages. You are put
 straight into a single elimination bracket, and there is a 50% chance that it
 will be your only match, and that you will lose it. Now consider the value
